@@ -1,0 +1,12 @@
+class Movie1 {
+  constructor(Rating)
+  {
+    this.defaultrating =  Rating  PG;
+  }
+  set_info(defaultrating)
+  {
+    return `The new rating is ${this.defaultrating}` }
+
+}
+var m1 = new Movie1();
+console.log(m1.set_info());

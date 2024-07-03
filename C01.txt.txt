@@ -1,0 +1,18 @@
+class Movie{
+  
+constructor(title,studio,rating)
+{
+this.title = title;
+this.studio = studio;
+this.rating = rating;
+}
+print_info(){
+return "the rating of the Movie is"+this.rating;
+}
+set_info(rating1){
+this.rating = rating1;
+return "the updated brand value is"+this.rating;
+}
+}
+var m = new Movie("ABC","GreenStudio","7.8");
+console.log(m.set_info("8.0"));

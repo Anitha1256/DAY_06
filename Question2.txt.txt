@@ -1,0 +1,38 @@
+class Circle {
+  constructor(radious , color)
+{
+  this.radious = radious;
+  this.color = color;
+}
+Circle (radious,color){
+  this.radious = radious ;
+  this.color = color ;}
+getRadious(radious)
+{ 
+return this.radious;
+}
+setRadious(radious){
+this.radious = radious;
+return this.radious;}
+getColor(){
+  return this.color; }
+setColor(color) {
+  this.color = color;
+  return this.color; }
+getArea(){
+  var Area = Math.PI * this.radious * this.radious;
+  return Area; }
+getCircumference(){
+  var C = 2*Math.PI*this.radious;
+  return C; }
+toString() { return this.radious , this.color }
+}
+
+var c = new Circle(1.5,"black");
+console.log(c.getRadious());
+console.log(c.setRadious(2.0));
+console.log(c.getColor());
+console.log(c.setColor("White"));
+console.log(c.getArea());
+console.log(c.getCircumference());
+console.log(c.toString());

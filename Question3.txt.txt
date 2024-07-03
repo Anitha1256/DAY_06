@@ -1,0 +1,19 @@
+class person{
+
+constructor(name, age, occupation)
+{
+this.name = name;
+this.age = age;
+this.occupation = occupation;
+} 
+
+print_details()
+{
+  return ("person details:" + " " + this.name +" "+ this.age + " " + this.occupation); 
+  
+}
+
+}
+
+var per = new person("Anu",24,"Teacher");
+console.log(per.print_details());

@@ -1,0 +1,14 @@
+class Movie{
+constructor(title,studio,rating){
+this.title = title;
+this.studio = studio;
+this.rating = rating;
+}
+print_info(){
+return `the info of the Movie is ${this.title} , ${this.studio} ,${this.rating}`;
+}
+
+}
+
+var c1 = new Movie("Casino Royale","Eon Productions","PG­13");
+console.log(c1.print_info());
